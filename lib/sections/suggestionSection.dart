@@ -5,7 +5,7 @@ class suggestionSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
+      height: 450,
       child: Column(
         children: [
           ListTile(
@@ -20,7 +20,7 @@ class suggestionSection extends StatelessWidget {
                 }),
           ),
           Container(
-            height: 340,
+            height: 390,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
