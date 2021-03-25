@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
 class suggestionCard extends StatelessWidget {
+  String profileImage;
+  String friendname;
+  String mutual;
+  suggestionCard({
+    @required this.profileImage,
+    @required this.friendname,
+    @required this.mutual,
+  });
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -11,15 +19,15 @@ class suggestionCard extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          sugggestionImage(),
-          suggestionDetails(),
+          sugggestionImage(profileImage),
+          suggestionDetails(friendname, mutual),
         ],
       ),
     );
   }
 }
 
-Widget sugggestionImage() {
+Widget sugggestionImage(String image) {
   return Positioned(
     top: 0,
     left: 0,
@@ -32,50 +40,87 @@ Widget sugggestionImage() {
         bottomRight: Radius.circular(10),
       ),
       child: Image.network(
-        "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
+        image,
         fit: BoxFit.cover,
       ),
     ),
   );
 }
 
-Widget suggestionDetails() {
+Widget suggestionDetails(
+  String text,
+  String friends,
+) {
   return Positioned(
     bottom: 0,
     right: 0,
     left: 0,
     child: Container(
-      height: 140,
-      color: Colors.grey[200],
+      decoration: BoxDecoration(
+        color: Colors.grey[200],
+        border: Border.all(
+          color: Colors.grey[300],
+          width: 1,
+        ),
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(10),
+          topLeft: Radius.circular(10),
+        ),
+      ),
+      height: 143,
       child: Column(
         children: [
           ListTile(
-            title: Text("Mark suckerburg"),
-            subtitle: Text("12 Mutual friends"),
+            title: Text(text),
+            subtitle: Text(friends),
           ),
           Container(
-            padding: EdgeInsets.only(
-              top: 10,
-              bottom: 10,
-              right: 10,
-            ),
+            padding: EdgeInsets.only(top: 10, bottom: 10, right: 10),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 flatbutton(
-                    buttonaction: () {
-                      print("Friend request");
-                    },
-                    buttonIcon: Icons.add,
-                    btcolor: Colors.blue[700],
-                    bttextcolor: Colors.white,
-                    btIconcolor: Colors.white,
-                    btText: "Add friend")
+                  buttonaction: () {
+                    print("Friend request");
+                  },
+                  buttonIcon: Icons.add,
+                  btcolor: Colors.blue[700],
+                  bttextcolor: Colors.white,
+                  btIconcolor: Colors.white,
+                  btText: "Add friend",
+                ),
+                blankButton(
+                  buttonaction: () {
+                    print("remove");
+                  },
+                  btText: "Remove",
+                  btcolor: Colors.grey[300],
+                  bttextcolor: Colors.black,
+                )
               ],
             ),
           )
         ],
       ),
     ),
+  );
+}
+
+Widget blankButton({
+  @required void Function() buttonaction,
+  @required String btText,
+  @required Color btcolor,
+  @required Color bttextcolor,
+}) {
+  return FlatButton(
+    onPressed: buttonaction,
+    child: Text(
+      btText,
+      style: TextStyle(color: bttextcolor),
+    ),
+    color: btcolor,
+    shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(4))),
   );
 }
 

@@ -24,7 +24,30 @@ class suggestionSection extends StatelessWidget {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                suggestionCard(),
+                suggestionCard(
+                  profileImage:
+                      "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
+                  friendname: "Mark suckerburg",
+                  mutual: "14 Mutual friends",
+                ),
+                suggestionCard(
+                  profileImage:
+                      "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
+                  friendname: "Mark suckerburg",
+                  mutual: "14 Mutual friends",
+                ),
+                suggestionCard(
+                  profileImage:
+                      "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
+                  friendname: "Mark suckerburg",
+                  mutual: "14 Mutual friends",
+                ),
+                suggestionCard(
+                  profileImage:
+                      "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
+                  friendname: "Mark suckerburg",
+                  mutual: "14 Mutual friends",
+                ),
               ],
             ),
           )
