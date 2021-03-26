@@ -105,13 +105,13 @@ class Home extends StatelessWidget {
             ),
             thickDivider,
             postCard(
-              name: "Vaibhav Sisnity",
+              name: "Hustle!",
               avatar:
                   "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
               publishedat: "7h ago",
               postTitle: "Be Productive!",
               postimage:
-                  "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
+                  "https://tse1.mm.bing.net/th?id=OIP.xfDrrgbuARrYp3kYSRM6XQHaHa&pid=Api&P=0&w=300&h=300",
               showblueTick: true,
               likeCount: "2.4k",
               shareCount: "124",
@@ -125,9 +125,9 @@ class Home extends StatelessWidget {
               avatar:
                   "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
               publishedat: "7h ago",
-              postTitle: "Be Productive!",
+              postTitle: "cool!",
               postimage:
-                  "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
+                  "https://tse2.mm.bing.net/th?id=OIP.RyIqeRjz2Eqv1357_qc-ugHaEK&pid=Api&P=0&w=318&h=179",
               showblueTick: true,
               likeCount: "2.4k",
               shareCount: "124",

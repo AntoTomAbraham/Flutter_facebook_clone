@@ -22,7 +22,7 @@ class storySection extends StatelessWidget {
             avatar:
                 "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
             story:
-                "https://pbs.twimg.com/profile_images/1268176490979561472/aorwOh3s_400x400.jpg",
+                "https://images.unsplash.com/photo-1611095788646-86737a001141?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
             createStorystatus: false,
           ),
           storyCard(
@@ -30,7 +30,7 @@ class storySection extends StatelessWidget {
             avatar:
                 "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
             story:
-                "https://pbs.twimg.com/profile_images/1268176490979561472/aorwOh3s_400x400.jpg",
+                "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
             createStorystatus: false,
           ),
           storyCard(
@@ -38,7 +38,7 @@ class storySection extends StatelessWidget {
             avatar:
                 "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
             story:
-                "https://pbs.twimg.com/profile_images/1268176490979561472/aorwOh3s_400x400.jpg",
+                "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
             createStorystatus: false,
           ),
           storyCard(
@@ -46,7 +46,7 @@ class storySection extends StatelessWidget {
             avatar:
                 "https://pbs.twimg.com/profile_images/1364491704817098753/V22-Luf7_400x400.jpg",
             story:
-                "https://pbs.twimg.com/profile_images/1268176490979561472/aorwOh3s_400x400.jpg",
+                "https://images.unsplash.com/photo-1518770660439-4636190af475?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
             createStorystatus: false,
           )
         ],
